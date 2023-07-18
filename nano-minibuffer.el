@@ -150,13 +150,13 @@
   "Activate nano-minibuffer minor mode"
   
   ;; Mini-frame setup
-  (set-face-background 'child-frame-border (face-foreground 'nano-faded))
+  (set-face-background 'child-frame-border (face-foreground 'nano-face-faded))
   (setq mini-frame-default-height 3)
   (setq mini-frame-create-lazy t)
   (setq mini-frame-show-parameters 'nano-minibuffer--frame-parameters)
   (setq mini-frame-ignore-commands
         '("edebug-eval-expression" debugger-eval-expression))
-  (setq mini-frame-internal-border-color (face-foreground 'nano-faded))
+  (setq mini-frame-internal-border-color (face-foreground 'nano-face-faded))
   (setq mini-frame-resize-min-height 3)
   
   ;; This does not work unless it is set via customize-variable
